@@ -1,0 +1,25 @@
+body{
+    max-width: 1140px;
+    border: 2px solid green;
+    margin: 40px auto;
+}
+.image-container{
+    display: flex;
+}
+.image-container div{
+    width: 50%;
+}
+.image-container img{
+    width: 100%;
+    border: 1px solid green;
+}
+
+@media screen and (max-width:576px) {
+    .image-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .image-container div{
+        width: 100%;
+    }
+}
